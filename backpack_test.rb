@@ -42,6 +42,10 @@ class BackpackTest < MiniTest::Test
     end
   end
 
+def test_gymshoes_packed_monday_thursday
+  backpack = build(:backpack, day_of_week: day)
+  assert(backpack.items.include?('shoes'))
+end
 
   ###### TESTS ABOUT GYM SHOES... wait, where are the tests about gym shoes? #####
   # is something missing here?
